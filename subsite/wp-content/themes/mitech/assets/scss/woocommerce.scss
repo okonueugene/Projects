@@ -1,0 +1,19 @@
+@import "settings/global";
+@import "settings/bootstrap";
+@import "tools/breakpoints";
+@import "tools/mixins-base";
+/* Woocommerce Styles */
+@import "woocommerce/select2";
+@import "woocommerce/general";
+@import "woocommerce/mini-cart";
+@import "woocommerce/widgets";
+@import "woocommerce/archive";
+@import "woocommerce/cart";
+@import "woocommerce/checkout";
+@import "woocommerce/single";
+@import "woocommerce/product-comment";
+@import "woocommerce/my-account";
+@import "woocommerce/wc-fields-factory";
+@import "woocommerce/woo-smart-compare-wishlist";
+@import "woocommerce/quick-view";
+@import "woocommerce/mobile";

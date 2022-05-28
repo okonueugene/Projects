@@ -1,0 +1,17 @@
+.rtl {
+	.tm-accordion {
+		&.style-01 {
+			.accordion-icon {
+				right: 0;
+				left: 30px;
+
+				&:before {
+					content: '\f107';
+					right: auto;
+					left: 0;
+				}
+			}
+		}
+	}
+}
+

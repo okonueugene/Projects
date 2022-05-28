@@ -1,0 +1,18 @@
+.tm-widget-title {
+	&.style-01 {
+		.widget-title {
+			font-size: 18px;
+			line-height: 1.67;
+			margin-bottom: 21px;
+		}
+	}
+
+	&.style-02 {
+		.widget-title {
+			font-size: 18px;
+			font-weight: 600;
+			line-height: 1.67;
+			margin-bottom: 21px;
+		}
+	}
+}

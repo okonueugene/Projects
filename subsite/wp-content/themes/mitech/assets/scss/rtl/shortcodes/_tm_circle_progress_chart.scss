@@ -1,0 +1,57 @@
+.rtl {
+	.tm-circle-progress-chart {
+		&.style-01 {
+			.chart {
+				margin-left: 0;
+				margin-right: 8px;
+
+				canvas {
+					left: auto;
+					right: 0;
+				}
+			}
+
+			.inner-content {
+				left: auto;
+				right: 50%;
+				transform: translate(50%, -50%);
+			}
+		}
+
+		&.style-02 {
+			.chart {
+				margin-left: 0;
+				margin-right: 8px;
+
+				canvas {
+					left: auto;
+					right: 0;
+				}
+			}
+
+			.inner-content {
+				left: auto;
+				right: 50%;
+				transform: translate(50%, -50%);
+			}
+
+			.chart-info {
+				text-align: right;
+				margin-left: 0;
+				margin-right: 35px;
+			}
+
+			.circle-design {
+				&.one {
+					left: auto;
+					right: 0;
+				}
+
+				&.two {
+					left: 0;
+					right: auto;
+				}
+			}
+		}
+	}
+}

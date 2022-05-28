@@ -1,0 +1,46 @@
+.rtl {
+	.tm-product {
+		&.style-grid {
+			.product-info {
+				text-align: right;
+			}
+
+			.product-actions {
+				padding-right: 0;
+				padding-left: 11px;
+			}
+
+			.woocommerce_loop_add_to_cart_wrap {
+				a {
+					&:before {
+						left: auto;
+						right: 0;
+					}
+
+					&:hover {
+						padding-left: 0;
+						padding-right: 35px;
+
+						&:before {
+							right: 15px;
+							left: auto;
+						}
+					}
+				}
+			}
+		}
+
+		&.style-list {
+			.product-info {
+				padding-left: 0;
+				padding-right: 34px;
+			}
+
+			.product-action {
+				margin-right: 0;
+				margin-left: 16px;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}

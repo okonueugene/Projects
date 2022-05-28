@@ -1,0 +1,144 @@
+.woosw-list table.woosw-content-items .woosw-content-item .woosw-content-item--remove span:before {
+	@extend %FontAwesomeLightImportant;
+	content: '\f00d' !important;
+}
+
+.woosc-area .woosc-inner .woosc-table .woosc-table-inner .woosc-table-close {
+	padding: 12px 15px;
+}
+
+.woosc-area .woosc-inner .woosc-table .woosc-table-inner .woosc-table-items table tbody .tr-price td {
+	color: inherit;
+	font-weight: inherit;
+}
+
+.woosw-area.woosw-area {
+	.woosw-inner {
+		.woosw-content {
+			max-width: 570px;
+
+			.woosw-content-top {
+				.woosw-close {
+					@extend %transit;
+
+					&:before {
+						@extend %FontAwesomeLightImportant;
+						content: '\f00d' !important;
+						vertical-align: middle;
+					}
+				}
+			}
+
+			.woosw-content-mid table.woosw-content-items .woosw-content-item .woosw-content-item--remove {
+				padding: 0 !important;
+
+				> span {
+					width: 30px !important;
+					height: 30px !important;
+
+					&:before {
+						@extend %FontAwesomeLightImportant;
+						content: '\f00d' !important;
+					}
+				}
+			}
+		}
+	}
+
+	.woosw-content {
+		.button {
+			height: 40px !important;
+			line-height: 38px !important;
+			padding: 0 20px !important;
+		}
+	}
+
+	.woosw-continue {
+		@extend %transit;
+	}
+}
+
+.woosw-list,
+.woosw-area,
+.woosc-area {
+	.woocommerce_loop_add_to_cart_wrap {
+		&:before,
+		&:after {
+			display: none;
+		}
+	}
+}
+
+.woosw-content-item--add {
+	min-width: 140px;
+	margin-top: 5px;
+}
+
+.wishlist-btn,
+.compare-btn {
+	&.style-01 {
+		a {
+			position: relative;
+			display: block;
+			width: 56px;
+			height: 56px;
+			border-radius: 5px;
+			font-size: 0 !important;
+			padding: 0 !important;
+
+			&:not(:hover) {
+				border-width: 1px;
+				border-style: solid;
+				background: transparent !important;
+			}
+
+			&:hover {
+				color: #fff !important;
+			}
+
+			&:before {
+				@extend %FontAwesomeRegularImportant;
+				font-size: 15px;
+				margin: 0;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+.wishlist-btn {
+	&.style-01 {
+		a {
+			&:before {
+				content: '\f004';
+			}
+
+			&.woosw-added {
+				&:before {
+					font-weight: 900;
+				}
+			}
+		}
+	}
+}
+
+.compare-btn {
+	&.style-01 {
+		a {
+			&:before {
+				content: '\f3f1';
+			}
+		}
+	}
+}
+
+.wishlist-btn.style-01 .woosw-adding,
+.compare-btn.style-01 .woosc-btn-adding {
+	&:before {
+		animation: load-spin 1s linear infinite;
+		content: '\f3f4';
+	}
+}

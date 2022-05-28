@@ -1,0 +1,38 @@
+.rtl {
+	.comment-list {
+		.children {
+			margin: 40px 30px 20px 0;
+		}
+
+		.comment-author {
+			float: right;
+		}
+
+		.comment-content {
+			position: relative;
+			overflow: hidden;
+			margin-left: 0;
+			margin-right: 120px;
+		}
+
+		.comment-datetime {
+			margin-right: 0;
+			margin-left: 6px;
+		}
+	}
+
+	@include media-breakpoint-down(lg) {
+		.comment-list {
+			.children,
+			.children .children {
+				padding-left: 0;
+				padding-right: 20px;
+			}
+
+			.comment-content {
+				margin-left: 0;
+				margin-right: 80px;
+			}
+		}
+	}
+}

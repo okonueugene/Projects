@@ -1,0 +1,178 @@
+.tm-contact-form-7-box {
+	.wpcf7-form {
+		br {
+			display: none;
+		}
+	}
+
+	.form-item {
+		position: relative;
+
+		&.has-icon {
+			.wpcf7-text,
+			.wpcf7-date {
+				padding-right: 40px;
+			}
+		}
+	}
+
+	.form-icon {
+		font-size: 18px;
+		position: absolute;
+		top: 14px;
+		right: 17px;
+		line-height: 0;
+	}
+
+	.wpcf7-form-control-wrap {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.wpcf7-textarea {
+		height: 150px;
+	}
+
+	.ajax-loader {
+		display: none !important;
+	}
+
+	&.group-style-01 {
+		background: #fff;
+		box-shadow: 0 2px 30px rgba(0, 0, 0, .1);
+		padding: 42px 30px 51px;
+		border-radius: 5px;
+		text-align: center;
+
+		.form-title {
+			margin-bottom: 10px;
+		}
+
+		.form-description {
+			margin-bottom: 36px;
+		}
+
+		.form-wrap {
+			display: flex;
+			flex-grow: 1;
+			flex-basis: 0;
+			margin: -10px;
+		}
+
+		.form-item-wrap {
+			padding: 10px;
+			flex-grow: 1;
+		}
+
+		.form-submit {
+			flex-grow: 0;
+			flex-shrink: 0;
+		}
+
+		.form-item {
+			color: #7e7e7e;
+		}
+
+		input[type='text'],
+		input[type='email'],
+		input[type='tel'],
+		select,
+		textarea {
+			background-color: #f5f5f5;
+			border-color: #f5f5f5;
+			color: inherit;
+
+			&:focus {
+				color: #333;
+				background-color: #fff;
+				border-color: #fff;
+				box-shadow: 0 0 40px rgba(51, 51, 51, .1);
+			}
+		}
+
+		.form-left-icon {
+			input[type='text'],
+			input[type='email'],
+			input[type='tel'] {
+				padding-left: 45px;
+			}
+		}
+
+		.form-right-icon {
+			input[type='text'],
+			input[type='email'],
+			input[type='tel'] {
+				padding-right: 45px;
+			}
+		}
+
+		.form-icon {
+			left: 20px;
+			right: auto;
+			top: 20px;
+			z-index: 2;
+			font-size: 15px;
+		}
+
+		.wpcf7-form-control-wrap {
+			position: relative;
+			z-index: 1;
+
+			&:hover {
+				&:after {
+					width: 100%;
+					left: 0;
+					right: auto;
+				}
+			}
+
+			&:after {
+				content: '';
+				width: 0;
+				height: 2px;
+				bottom: 0;
+				position: absolute;
+				left: auto;
+				right: 0;
+				transition: width .6s cubic-bezier(.25, .8, .25, 1) 0s;
+			}
+		}
+
+		.wpcf7-submit {
+			margin: 7px auto 0;
+			min-width: 220px;
+		}
+	}
+
+	&.style-02 {
+		padding: 50px;
+	}
+
+  &.style-03 {
+	 padding: 50px;
+  }
+  @media all and (max-width: 460px) {
+	 &.style-03 {
+		padding:30px 15px 50px 15px !important;
+		.wpcf7-submit{
+		  padding:0  !important;
+		  min-width: 180px !important;
+		}
+	 }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+	.tm-contact-form-7-box {
+		&.style-01 {
+			.form-wrap {
+				display: block;
+			}
+
+			.wpcf7-submit {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}

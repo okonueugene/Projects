@@ -1,0 +1,12 @@
+.rtl {
+	.tm-heading {
+		&.link-style-02 {
+			a {
+				&:after {
+					margin-left: 0;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}

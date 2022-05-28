@@ -1,0 +1,41 @@
+.rtl {
+	.top-bar-info {
+		.info-item {
+			margin-right: 0;
+			margin-left: 15px;
+
+			&:last-child {
+				margin-left: 0;
+			}
+		}
+
+		.info-icon {
+			margin-right: 0;
+			margin-left: 5px;
+		}
+	}
+
+	.top-bar-user {
+		.avatar {
+			img {
+				margin-left: 10px;
+				margin-right: 0;
+			}
+		}
+	}
+
+	.top-bar-04 {
+		.top-bar-right {
+			> div ~ div:before,
+			ul ~ div:before {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+
+	.page-top-bar .switcher-language-wrapper .wpml-ls .wpml-ls-item-toggle {
+		padding-left: 10px;
+		padding-right: 0;
+	}
+}

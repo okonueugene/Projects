@@ -1,0 +1,11 @@
+.top-bar-01 {
+	.top-bar-wrap {
+		height: 100%;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.top-bar-01 {
+		display: none;
+	}
+}

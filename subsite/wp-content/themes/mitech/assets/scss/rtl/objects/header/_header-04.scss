@@ -1,0 +1,43 @@
+.rtl {
+	.header-04 {
+		.header-info {
+			.info-item {
+				padding-left: 0;
+				padding-right: 19px;
+			}
+
+			.swiper-slide-active ~ .swiper-slide {
+				.info-item {
+					border-left: 0;
+					border-right: 1px solid #ededed;
+				}
+			}
+		}
+
+		.header-search-form .search-field {
+			padding-left: 50px;
+			padding-right: 20px;
+		}
+
+		.search-submit {
+			left: 0;
+			right: auto;
+		}
+
+		.menu--primary .menu__container > li {
+			&:first-child {
+				> a {
+					padding-right: 0 !important;
+
+					.menu-item-wrap {
+						padding-right: 0 !important;
+					}
+				}
+			}
+		}
+	}
+
+	&.desktop-menu .header-04 .menu--primary {
+		text-align: right;
+	}
+}

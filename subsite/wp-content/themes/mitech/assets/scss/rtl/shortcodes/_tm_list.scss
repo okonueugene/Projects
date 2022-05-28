@@ -1,0 +1,58 @@
+.rtl {
+	.tm-list {
+		&.align-right {
+			.marker {
+				float: right;
+			}
+
+			&.tm-list.style-normal,
+			&.tm-list.style-separator {
+				.link {
+					float: right;
+				}
+			}
+
+			&.style-check {
+				.list-item {
+					padding-left: 0;
+					padding-right: 32px;
+				}
+
+				.marker {
+					&:before {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+
+			&.style-check-02 {
+				.list-item {
+					padding-left: 0;
+					padding-right: 40px;
+				}
+
+				.marker {
+					&:before {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+
+			&.style-circle {
+				.list-item {
+					padding-left: 0;
+					padding-right: 14px;
+				}
+
+				.marker {
+					&:before {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.rtl {
+	&.woocommerce {
+		.shop-view-switcher {
+			margin: 0 30px 0 -10px;
+		}
+
+		.archive-shop-actions {
+			.shop-filter-right {
+				padding-left: 0;
+				padding-right: 15px;
+			}
+
+			.shop-filter-left {
+				padding-left: 15px;
+				padding-right: 0;
+			}
+		}
+
+		nav.woocommerce-pagination {
+			ul {
+				li {
+					span, a {
+						&.prev {
+							&:before {
+								margin-right: 0;
+								margin-left: 8px;
+								content: '\f324';
+							}
+						}
+						&.next {
+							&:after {
+								margin-right: 8px;
+								margin-left: 0;
+								content: '\f323';
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

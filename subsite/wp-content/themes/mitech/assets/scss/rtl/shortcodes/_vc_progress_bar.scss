@@ -1,0 +1,40 @@
+.rtl {
+	.vc_progress_bar {
+		&.style-01 {
+			.vc_single_bar_title {
+				.vc_label_units {
+					float: left;
+					right: auto;
+					left: -40px;
+				}
+			}
+
+			.vc_general.vc_single_bar {
+				.vc_bar {
+					&:before,
+					&:after {
+						left: -4px;
+						right: auto;
+						transform: translate(-50%, -50%);
+					}
+				}
+			}
+		}
+
+		&.style-02,
+		&.style-03 {
+			.vc_general.vc_single_bar {
+				.vc_bar {
+					.vc_label_units {
+						right: auto;
+						left: 8px;
+					}
+				}
+			}
+		}
+
+		&.style-03 {
+
+		}
+	}
+}

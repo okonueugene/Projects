@@ -1,0 +1,28 @@
+.rtl {
+	.tm-counter {
+		&.align-left {
+			.number-wrap {
+				justify-content: flex-end;
+			}
+		}
+
+		&.align-center {
+			.number-wrap {
+				justify-content: center;
+			}
+		}
+
+		&.align-right {
+			.number-wrap {
+				justify-content: flex-start;
+			}
+		}
+
+		&.style-03 {
+			.icon {
+				margin-right: 0;
+				margin-left: 20px;
+			}
+		}
+	}
+}

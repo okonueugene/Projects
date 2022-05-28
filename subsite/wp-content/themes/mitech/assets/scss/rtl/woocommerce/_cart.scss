@@ -1,0 +1,9 @@
+.rtl {
+	&.woocommerce-cart {
+		.shop_table {
+			th, td {
+				text-align: right;
+			}
+		}
+	}
+}

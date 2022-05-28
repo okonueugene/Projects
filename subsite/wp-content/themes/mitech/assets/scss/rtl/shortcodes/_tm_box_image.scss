@@ -1,0 +1,12 @@
+.rtl {
+	.tm-box-image {
+		&.style-03,
+		&.style-08,
+		&.style-09 {
+			.images {
+				margin-right: 0;
+				margin-left: 30px;
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.rtl {
+	.tm-pricing {
+		&.style-01 {
+			.tm-pricing-list {
+				text-align: right;
+				li {
+					padding: 7px 31px 7px 0;
+
+					&:before {
+						left: auto;
+						right: 0;
+					}
+				}
+			}
+		}
+	}
+}

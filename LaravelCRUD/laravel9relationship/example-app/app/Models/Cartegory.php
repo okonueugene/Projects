@@ -1,0 +1,17 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Cartegory extends Model
+{
+    use HasFactory;
+    protected $table = 'cartegories';
+
+    protected $fillable = [
+        'name',
+        'slug',
+    ];
+}

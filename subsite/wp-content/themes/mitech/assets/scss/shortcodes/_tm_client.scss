@@ -1,0 +1,131 @@
+.tm-client {
+
+  .image {
+	 transition: all .3s linear;
+  }
+
+  .image-hover {
+	 transition: all .3s linear;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 opacity: 0;
+	 visibility: hidden;
+  }
+
+  .has-image-hover {
+	 position: relative;
+
+	 &:hover {
+		.image {
+		  visibility: hidden;
+		  opacity: 0;
+		}
+
+		.image-hover {
+		  opacity: 1;
+		  visibility: visible;
+		  transform: none !important;
+		}
+	 }
+  }
+
+  &.hover-grayscale {
+	 .image {
+		filter: grayscale(100%);
+		opacity: .3;
+	 }
+
+	 .inner {
+		&:hover {
+		  .image {
+			 filter: none;
+			 opacity: 1;
+		  }
+		}
+	 }
+  }
+
+  &.hover-opacity {
+	 .image {
+		opacity: .3;
+	 }
+
+	 .inner {
+		&:hover {
+		  .image {
+			 opacity: 1;
+		  }
+		}
+	 }
+  }
+
+  &.hover-faded {
+	 .inner {
+		&:hover {
+		  .image {
+			 opacity: .2;
+		  }
+		}
+	 }
+  }
+
+  &.effect-move-up {
+	 .has-image-hover {
+		.image-hover {
+		  transform: translateY(10px);
+		}
+
+		&:hover {
+		  .image {
+			 transform: translateY(-5px);
+		  }
+		}
+	 }
+  }
+
+  &.effect-scale-up {
+	 .has-image-hover {
+		.image-hover {
+		  transform: scale(.8, .8);
+		}
+
+		&:hover {
+		  .image {
+			 transform: scale(.8, .8);
+		  }
+		}
+	 }
+  }
+
+  &.style-grid {
+	 .tm-grid {
+		grid-row-gap: 60px;
+	 }
+
+	 .grid-item-inner {
+		position: relative;
+		display: flex;
+		align-items: center;
+		height: 100%;
+	 }
+
+  }
+
+  &.align-left {
+	 .grid-item-inner {
+		justify-content: left;
+	 }
+  }
+  &.align-center {
+	 .grid-item-inner {
+		justify-content: center;
+	 }
+  }
+  &.align-right {
+	 .grid-item-inner {
+		justify-content: right;
+	 }
+  }
+
+}

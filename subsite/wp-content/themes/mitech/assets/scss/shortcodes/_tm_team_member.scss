@@ -1,0 +1,149 @@
+.tm-team-member {
+  position: relative;
+
+  .position {
+	 font-size: 14px;
+  }
+
+  // Style 01 + 02
+  &.group-style-01 {
+	 @extend %transit;
+
+	 &:hover {
+		.social-networks {
+		  opacity: 1;
+		  visibility: visible;
+		  transform: translateY(0);
+		}
+	 }
+
+	 .photo {
+		position: relative;
+		margin-bottom: 22px;
+
+		img {
+		  width: 100%;
+		}
+	 }
+
+	 .name {
+		font-size: 24px;
+		line-height: 1.5;
+		margin-bottom: 4px;
+	 }
+
+	 .description {
+		margin-top: 12px;
+	 }
+
+	 .social-networks {
+		@extend %transit;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+		padding: 10px 0;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(5px);
+		text-align: center;
+
+		a {
+		  @extend %transit;
+		  display: inline-block;
+		  font-size: 16px;
+		  line-height: 0;
+		  color: #fff;
+		  padding: 10px 14px;
+		}
+	 }
+  }
+
+  &.style-01 {
+	 .social-networks {
+		padding: 6px 0;
+	 }
+  }
+
+  &.style-02 {
+	 text-align: center;
+  }
+
+  &.style-03 {
+	 text-align: center;
+
+	 .photo {
+		margin-bottom: 25px;
+	 }
+
+	 .name {
+		font-size: 18px;
+		line-height: 1.78;
+		margin-bottom: 4px;
+	 }
+  }
+
+  &.style-04 {
+	 @extend %transit;
+
+	 &:hover {
+		.social-networks {
+		  opacity: 1;
+		  visibility: visible;
+		  transform: translateY(0);
+		  background-color: #333333;
+		}
+	 }
+
+	 .photo {
+		position: relative;
+		margin-bottom: 22px;
+
+		img {
+		  width: 100%;
+		}
+	 }
+
+	 .name {
+		font-size: 24px;
+		line-height: 1.5;
+		margin-bottom: 4px;
+		color: #454545 !important;
+	 }
+
+	 .position {
+		font-size: 15px;
+		color: #7e7e7e !important;
+	 }
+
+	 .description {
+		margin-top: 12px;
+	 }
+
+	 .social-networks {
+		@extend %transit;
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+		padding: 10px 0;
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(5px);
+		text-align: center;
+
+		a {
+		  @extend %transit;
+		  display: inline-block;
+		  font-size: 16px;
+		  line-height: 0;
+		  color: #fff;
+		  padding: 10px 14px;
+		}
+	 }
+
+	 .social-networks {
+		padding: 6px 0;
+	 }
+  }
+}

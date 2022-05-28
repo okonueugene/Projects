@@ -1,0 +1,57 @@
+.rtl {
+	.entry-case-study-details {
+		td {
+			&:first-child {
+				text-align: right;
+			}
+
+			&:last-child {
+				text-align: left;
+			}
+		}
+	}
+
+	.case-study-nav-links {
+		.prev {
+			a {
+				padding-left: 0;
+				padding-right: 36px;
+			}
+
+			img {
+				margin-right: 0;
+				margin-left: 28px;
+			}
+
+			h6 {
+				&:before {
+					content: '\f105';
+					left: auto;
+					right: 0;
+				}
+			}
+		}
+
+		.next {
+			text-align: left;
+
+			a {
+				padding-left: 36px;
+				padding-right: 0;
+			}
+
+			img {
+				margin-left: 0;
+				margin-right: 28px;
+			}
+
+			h6 {
+				&:before {
+					content: '\f104';
+					right: auto;
+					left: 0;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+.ll-image {
+	transition: all .3s;
+
+	&.unload {
+		filter: blur(5px);
+	}
+}

@@ -1,0 +1,18 @@
+.desktop {
+	.tm-product {
+		&.style-grid {
+			.product-wrapper {
+				&:hover {
+					.product-actions {
+						transform: none;
+					}
+				}
+			}
+
+			.product-actions {
+				@extend %transit;
+				transform: translateY(100%);
+			}
+		}
+	}
+}

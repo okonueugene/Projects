@@ -1,0 +1,65 @@
+.tm-problem-solution {
+	.label {
+		font-size: 40px;
+		line-height: 1.4;
+		margin-bottom: 48px;
+	}
+
+	.problem {
+		position: relative;
+		padding-left: 32px;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 1.74;
+
+		&:before {
+			@extend %FontAwesomeRegular;
+			content: '\f178';
+			position: absolute;
+			top: 4px;
+			left: 0;
+			font-size: 18px;
+		}
+	}
+
+	.solution {
+		position: relative;
+		padding-left: 32px;
+
+		&:before {
+			@extend %FontAwesomeRegular;
+			content: '\f00c';
+			position: absolute;
+			top: 4px;
+			left: 0;
+			font-size: 18px;
+		}
+	}
+
+	.item {
+		border-bottom: 1px solid #eee;
+		padding-bottom: 50px;
+		margin-bottom: 44px;
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.tm-problem-solution {
+		.label {
+			font-size: 34px;
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.tm-problem-solution {
+		.label {
+			font-size: 28px;
+		}
+
+		.item {
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+	}
+}

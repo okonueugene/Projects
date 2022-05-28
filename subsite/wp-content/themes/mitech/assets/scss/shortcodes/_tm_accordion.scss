@@ -1,0 +1,162 @@
+.tm-accordion {
+
+	.accordion-title-wrapper {
+		cursor: pointer;
+	}
+
+	.accordion-title {
+		@extend %transit;
+		margin-bottom: 0;
+	}
+
+	.accordion-content {
+		display: none;
+	}
+
+	&.style-01 {
+
+		.accordion-section {
+			position: relative;
+			border-radius: 5px;
+			overflow: hidden;
+			background: #fff;
+
+			+ .accordion-section {
+				margin-top: 20px;
+			}
+		}
+
+		.accordion-title {
+			position: relative;
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 1.23;
+			background: #fff;
+			padding: 18px 30px;
+			border: 1px solid #ededed;
+			user-select: none;
+		}
+
+		.accordion-icon {
+			position: absolute;
+			top: 50%;
+			right: 30px;
+			transform: translateY(-50%);
+			font-weight: 500;
+
+			&:before {
+				@extend %FontAwesomeRegular;
+				content: '\f107';
+				position: absolute;
+				top: 50%;
+				right: 0;
+				transform: translateY(-50%);
+				font-size: 20px;
+			}
+		}
+
+		.accordion-section {
+			&:hover,
+			&.active {
+				box-shadow: 0 18px 40px rgba(51, 51, 51, .1);
+
+				.accordion-title {
+					color: #fff !important;
+					border-color: transparent;
+				}
+			}
+
+			&.active {
+				.accordion-icon {
+					&:before {
+						content: '\f106';
+					}
+				}
+			}
+
+			&:not(.active ) {
+				.accordion-title {
+					border-radius: 5px;
+				}
+			}
+		}
+
+		.accordion-content {
+			padding: 23px 30px 29px;
+		}
+	}
+
+	&.style-02 {
+
+		.accordion-section {
+			position: relative;
+			background: #fff;
+			border-bottom: 1px solid #ededed;
+			padding: 7px 0;
+		}
+
+		.accordion-title {
+			position: relative;
+			font-size: 24px;
+			line-height: 1.25;
+			background: #fff;
+			color: #ababab;
+			padding: 20px 30px 20px 45px;
+			user-select: none;
+		}
+
+		.accordion-icon {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			font-weight: 500;
+
+			&:before {
+				@extend %FontAwesomeRegular;
+				@extend %transit;
+				content: '\f32d';
+				position: absolute;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				font-size: 24px;
+				color: #ababab;
+			}
+		}
+
+		.accordion-section {
+			&.active {
+				.accordion-icon {
+					&:before {
+						content: '\f330';
+					}
+				}
+			}
+		}
+
+		.accordion-content {
+			padding: 0 45px 29px;
+		}
+	}
+}
+
+@include media-breakpoint-down(lg) {
+	.tm-accordion {
+		&.style-02 {
+			.accordion-title {
+				font-size: 21px;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.tm-accordion {
+		&.style-02 {
+			.accordion-title {
+				font-size: 18px;
+			}
+		}
+	}
+}
